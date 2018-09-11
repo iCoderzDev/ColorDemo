@@ -34,7 +34,8 @@
     _viewBanner.layer.shadowOpacity = 0.8;
     
     
-    
+    self.title = @"News detail";
+
     
    
 }

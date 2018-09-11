@@ -25,6 +25,8 @@
 		F417CFF9213FFABE004AF7FF /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = F417CFED213FFABD004AF7FF /* UIAppearance+Swift.m */; };
 		F417CFFA213FFABE004AF7FF /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F417CFEE213FFABD004AF7FF /* UIImage+ChameleonPrivate.m */; };
 		F417CFFB213FFABE004AF7FF /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = F417CFEF213FFABE004AF7FF /* UIButton+Chameleon.m */; };
+		F43C0AE02147C62400DA1C37 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C0ADF2147C62400DA1C37 /* ListViewController.m */; };
+		F43C0AE32147C68600DA1C37 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C0AE22147C68600DA1C37 /* ListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		F417CFED213FFABD004AF7FF /* UIAppearance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAppearance+Swift.m"; sourceTree = "<group>"; };
 		F417CFEE213FFABD004AF7FF /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		F417CFEF213FFABE004AF7FF /* UIButton+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		F43C0ADE2147C62400DA1C37 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		F43C0ADF2147C62400DA1C37 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		F43C0AE12147C68600DA1C37 /* ListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		F43C0AE22147C68600DA1C37 /* ListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 				F417CFBF213FFA7A004AF7FF /* AppDelegate.m */,
 				F417CFC1213FFA7A004AF7FF /* ViewController.h */,
 				F417CFC2213FFA7A004AF7FF /* ViewController.m */,
+				F43C0ADE2147C62400DA1C37 /* ListViewController.h */,
+				F43C0ADF2147C62400DA1C37 /* ListViewController.m */,
+				F43C0AE12147C68600DA1C37 /* ListCell.h */,
+				F43C0AE22147C68600DA1C37 /* ListCell.m */,
 				F417CFD4213FFA9C004AF7FF /* Chamelon */,
 				F417CFC4213FFA7A004AF7FF /* Main.storyboard */,
 				F417CFC7213FFA7D004AF7FF /* Assets.xcassets */,
@@ -225,6 +235,8 @@
 				F417CFF8213FFABE004AF7FF /* UINavigationController+Chameleon.m in Sources */,
 				F417CFC3213FFA7A004AF7FF /* ViewController.m in Sources */,
 				F417CFF4213FFABE004AF7FF /* UIColor+ChameleonPrivate.m in Sources */,
+				F43C0AE02147C62400DA1C37 /* ListViewController.m in Sources */,
+				F43C0AE32147C68600DA1C37 /* ListCell.m in Sources */,
 				F417CFF9213FFABE004AF7FF /* UIAppearance+Swift.m in Sources */,
 				F417CFFA213FFABE004AF7FF /* UIImage+ChameleonPrivate.m in Sources */,
 				F417CFCE213FFA7D004AF7FF /* main.m in Sources */,
@@ -306,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -358,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -369,14 +381,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ColorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ColorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -385,14 +400,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ColorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ColorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
