@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *viewBanner;
+@property (weak, nonatomic) IBOutlet UIView *viewContainer;
 
 @end
 
@@ -20,20 +21,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-   // _viewBanner.backgroundColor = [UIColor flatRedColor];
+    _viewBanner.backgroundColor = [UIColor clearColor];
+    _viewContainer.backgroundColor = [UIColor flatRedColor];
 
+    _viewContainer.layer.masksToBounds = YES;
+    _viewContainer.layer.cornerRadius = 8;
     
     
-    CAShapeLayer *shapeLayer = [CAShapeLayer new];
-    shapeLayer.path = (__bridge CGPathRef _Nullable)([UIBezierPath bezierPathWithRoundedRect:_viewBanner.bounds cornerRadius:8.0]);
-    shapeLayer.fillColor = [UIColor flatRedColor].CGColor;
-    shapeLayer.shadowColor = [UIColor blackColor].CGColor;
-    shapeLayer.shadowOffset = CGSizeMake(0.0, 1.0);
-    shapeLayer.shadowRadius = 3;
-    shapeLayer.shadowOpacity = 0.5;
-    [_viewBanner.layer insertSublayer:shapeLayer atIndex:0];
+    _viewBanner.layer.masksToBounds = NO;
+    _viewBanner.layer.shadowColor = UIColor.grayColor.CGColor;
+    _viewBanner.layer.shadowOffset = CGSizeMake(0.0, 2.0);
+    _viewBanner.layer.shadowOpacity = 0.8;
     
-    [_viewBanner layoutSubviews];
+    
+    
+    
+   
 }
 
 

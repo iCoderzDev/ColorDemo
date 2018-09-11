@@ -20,9 +20,19 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDW-2N-i48">
                                 <rect key="frame" x="20" y="70" width="335" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DuO-QF-EDp">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DuO-QF-EDp" secondAttribute="bottom" id="2cg-aT-Q2E"/>
+                                    <constraint firstAttribute="trailing" secondItem="DuO-QF-EDp" secondAttribute="trailing" id="8TJ-ms-b33"/>
+                                    <constraint firstItem="DuO-QF-EDp" firstAttribute="leading" secondItem="aDW-2N-i48" secondAttribute="leading" id="gRd-3n-JXm"/>
                                     <constraint firstAttribute="height" constant="150" id="kbk-uG-odQ"/>
+                                    <constraint firstItem="DuO-QF-EDp" firstAttribute="top" secondItem="aDW-2N-i48" secondAttribute="top" id="nFl-cD-SgS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -36,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="viewBanner" destination="aDW-2N-i48" id="eH0-Gd-U1U"/>
+                        <outlet property="viewContainer" destination="DuO-QF-EDp" id="aVz-Bg-TFy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
