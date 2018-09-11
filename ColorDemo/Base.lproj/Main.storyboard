@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDW-2N-i48">
-                                <rect key="frame" x="20" y="70" width="335" height="150"/>
+                                <rect key="frame" x="15" y="50" width="345" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DuO-QF-EDp">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="150"/>
+                                        <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="DuO-QF-EDp" secondAttribute="bottom" id="2cg-aT-Q2E"/>
                                     <constraint firstAttribute="trailing" secondItem="DuO-QF-EDp" secondAttribute="trailing" id="8TJ-ms-b33"/>
@@ -35,18 +35,52 @@
                                     <constraint firstItem="DuO-QF-EDp" firstAttribute="top" secondItem="aDW-2N-i48" secondAttribute="top" id="nFl-cD-SgS"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzb-gI-Zvg">
+                                <rect key="frame" x="15" y="220" width="345" height="427"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Times of India" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP2-2C-jh3">
+                                        <rect key="frame" x="8" y="8" width="329" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-Ti-qwL">
+                                        <rect key="frame" x="8" y="54.5" width="329" height="483.5"/>
+                                        <mutableString key="text">The Times of India issued its first edition on 3 November 1838 as The Bombay Times and Journal of Commerce.[13][14] The paper published Wednesdays and Saturdays under the direction of Raobahadur Narayan Dinanath Velkar, a Maharashtrian Reformist, and contained news from Britain and the world, as well as the Indian Subcontinent. J.E. Brennan was its first editor.[15][16] In 1850, it began to publish daily editions.
+
+In 1860, editor Robert Knight (1825–1892) bought the Indian shareholders' interests, merged with rival Bombay Standard, and started India's first news agency. It wired Times dispatches to papers across the country and became the Indian agent for Reuters news service. In 1861, he changed the name from the Bombay Times and Standard to The Times of India. Knight fought for a press free of prior restraint or intimidation, frequently resisting the attempts by governments, business interests, and cultural spokesmen and led the paper to national prominence.[17][18] In the 19th century, this newspaper company employed more than 800 people and had a sizeable circulation in India and Europe.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Bug-Ti-qwL" firstAttribute="top" secondItem="yP2-2C-jh3" secondAttribute="bottom" constant="20" id="2SZ-FK-x0N"/>
+                                    <constraint firstItem="yP2-2C-jh3" firstAttribute="leading" secondItem="vzb-gI-Zvg" secondAttribute="leading" constant="8" id="B8T-9x-7eH"/>
+                                    <constraint firstItem="Bug-Ti-qwL" firstAttribute="leading" secondItem="vzb-gI-Zvg" secondAttribute="leading" constant="8" id="R8t-cT-tXv"/>
+                                    <constraint firstItem="yP2-2C-jh3" firstAttribute="top" secondItem="vzb-gI-Zvg" secondAttribute="top" constant="8" id="ZVc-Di-Rma"/>
+                                    <constraint firstAttribute="trailing" secondItem="yP2-2C-jh3" secondAttribute="trailing" constant="8" id="ZeF-We-GNx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bug-Ti-qwL" secondAttribute="trailing" constant="8" id="wR8-9X-Z7s"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aDW-2N-i48" secondAttribute="trailing" constant="20" id="3BY-fn-xSp"/>
-                            <constraint firstItem="aDW-2N-i48" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ho5-xT-UGG"/>
-                            <constraint firstItem="aDW-2N-i48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vlz-9P-vBt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aDW-2N-i48" secondAttribute="trailing" constant="15" id="3BY-fn-xSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vzb-gI-Zvg" secondAttribute="trailing" constant="15" id="FR9-AD-AwO"/>
+                            <constraint firstItem="aDW-2N-i48" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ho5-xT-UGG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vzb-gI-Zvg" secondAttribute="bottom" constant="20" id="ZSw-93-GDe"/>
+                            <constraint firstItem="vzb-gI-Zvg" firstAttribute="top" secondItem="aDW-2N-i48" secondAttribute="bottom" constant="20" id="dU1-O9-YhL"/>
+                            <constraint firstItem="vzb-gI-Zvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="npH-0H-M4X"/>
+                            <constraint firstItem="aDW-2N-i48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vlz-9P-vBt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="viewBanner" destination="aDW-2N-i48" id="eH0-Gd-U1U"/>
                         <outlet property="viewContainer" destination="DuO-QF-EDp" id="aVz-Bg-TFy"/>
+                        <outlet property="viewDetail" destination="vzb-gI-Zvg" id="gmj-ar-4sd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

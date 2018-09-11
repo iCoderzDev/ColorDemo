@@ -12,7 +12,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *viewBanner;
 @property (weak, nonatomic) IBOutlet UIView *viewContainer;
-
+@property (weak, nonatomic) IBOutlet UIView *viewDetail;
 @end
 
 @implementation ViewController
@@ -27,16 +27,14 @@
     _viewContainer.layer.masksToBounds = YES;
     _viewContainer.layer.cornerRadius = 8;
     
+    _viewDetail.layer.masksToBounds = YES;
+    _viewDetail.layer.cornerRadius = 8;
     
     _viewBanner.layer.masksToBounds = NO;
     _viewBanner.layer.shadowColor = UIColor.grayColor.CGColor;
     _viewBanner.layer.shadowOffset = CGSizeMake(0.0, 2.0);
     _viewBanner.layer.shadowOpacity = 0.8;
     
-    
-    
-    
-   
 }
 
 
